@@ -45,6 +45,9 @@ TagManager:
   - name: Scene
     uniqueID: 1800165205
     locked: 0
+  - name: Particle
+    uniqueID: 935769893
+    locked: 0
   - name: Player
     uniqueID: 917178435
     locked: 0
