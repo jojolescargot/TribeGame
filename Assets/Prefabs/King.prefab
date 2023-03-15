@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 550167091427962269}
   - component: {fileID: 550167091427962268}
+  - component: {fileID: 104123536}
   m_Layer: 0
-  m_Name: ChessPieces_52
+  m_Name: King
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 917178435
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1527549777, guid: a05211e5a21d3b3458f25dafa7b5974f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,3 +85,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &104123536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550167091427962271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40c770789380ac54391d0eed53ee3e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeplacementEffectPrefab: {fileID: 8436458713243544843, guid: a3a043fa11d975a4396017de9415dcee, type: 3}
+  smoothing: 5
+  canMove: 1
+  frameNeedForMovement: 80
+  move: {x: 0, y: 0}

@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeplacementEffectPrefab: {fileID: 8436458713243544843, guid: a3a043fa11d975a4396017de9415dcee, type: 3}
-  smoothing: 2
+  smoothing: 5
   canMove: 1
   frameNeedForMovement: 80
   move: {x: 0, y: 0}
