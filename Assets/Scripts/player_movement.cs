@@ -63,33 +63,33 @@ public class player_movement : MonoBehaviour
         if(canMove & move != new Vector2(0,0))
         {
             // Right or left
-            if(move ==  new Vector2(1,0))
+            if(move ==  new Vector2(0.225f,0))
             {
                 angle = 0;
-            }else if(move ==  new Vector2(-1,0))
+            }else if(move ==  new Vector2(-0.225f,0))
             {
                 angle = 180;
             }
             // Top or down
-            else if(move ==  new Vector2(0, -1))
+            else if(move ==  new Vector2(0, -0.225f))
             {
                 angle = -90;
 
-            }else if(move ==  new Vector2(0, 1))
+            }else if(move ==  new Vector2(0, 0.225f))
             {
                 angle = 90;
             }
             // Diagonals
-            else if(move ==  new Vector2(1, 1))
+            else if(move ==  new Vector2(0.225f, 0.225f))
             {
                 angle = 45;
-            }else if(move ==  new Vector2(1, -1))
+            }else if(move ==  new Vector2(0.225f, -0.225f))
             {
                 angle = -45;
-            }else if(move ==  new Vector2(-1, -1)) 
+            }else if(move ==  new Vector2(-0.225f, -0.225f)) 
             {
                 angle = -135;
-            }else if(move ==  new Vector2(-1,1))
+            }else if(move ==  new Vector2(-0.225f,0.225f))
             {
                 angle = 135;
             }
@@ -97,7 +97,7 @@ public class player_movement : MonoBehaviour
 
             rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
-            if((targetPos ==  new Vector3(-0.225f,0)))
+            if((move ==  new Vector2(-0.225f,0)))
             {
                 rotation = rotation * new Quaternion(180,0,0,0);
             }
