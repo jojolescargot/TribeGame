@@ -5,7 +5,6 @@ using System;
 
 public class PositionToChessPosition : MonoBehaviour
 {
-    private Camera cam;
 
     public Vector3  ConvertionChessToPosition(List<int> chessPos)
     {   
@@ -57,19 +56,5 @@ public class PositionToChessPosition : MonoBehaviour
         chessPos.Add(666);
         return(chessPos);
     }
-
-    void Update()
-    {
-        cam = Camera.main;
-
-
-        Vector3 mousePos = Input.mousePosition;
-        string listeString = string.Join(", ", ConvertionMousePositionToChess(cam.ScreenToWorldPoint(mousePos)));
-
-        Debug.Log(listeString); 
-    }
-
-
-
 
 }

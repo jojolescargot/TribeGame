@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 550167091427962269}
   - component: {fileID: 550167091427962268}
-  - component: {fileID: 104123536}
+  - component: {fileID: 859313289267997800}
+  - component: {fileID: 3178959961272799874}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &104123536
+--- !u!114 &859313289267997800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,11 +95,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 550167091427962271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c770789380ac54391d0eed53ee3e73, type: 3}
+  m_Script: {fileID: 11500000, guid: 444b4d2d3d1079644978524a9d1a0c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeplacementEffectPrefab: {fileID: 8436458713243544843, guid: a3a043fa11d975a4396017de9415dcee, type: 3}
+  DeplacementEffectPrefab: {fileID: 0}
   smoothing: 5
-  canMove: 1
-  frameNeedForMovement: 80
+  canMove: 0
+  frameNeedForMovement: 10
   move: {x: 0, y: 0}
+--- !u!114 &3178959961272799874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550167091427962271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fea457384a8034fa452042bbc77a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
