@@ -128,7 +128,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 550167091427962271, guid: 0975e091519818c4ab3db4fd51a0b93a, type: 3}
   m_PrefabInstance: {fileID: 550167091460219154}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &104123536
+--- !u!114 &104123534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,14 +137,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 104123533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40c770789380ac54391d0eed53ee3e73, type: 3}
+  m_Script: {fileID: 11500000, guid: 444b4d2d3d1079644978524a9d1a0c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeplacementEffectPrefab: {fileID: 8436458713243544843, guid: a3a043fa11d975a4396017de9415dcee, type: 3}
+  DeplacementEffectPrefab: {fileID: 0}
   smoothing: 5
   canMove: 1
-  frameNeedForMovement: 80
+  frameNeedForMovement: 10
   move: {x: 0, y: 0}
+--- !u!114 &104123537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104123533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fea457384a8034fa452042bbc77a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880422371
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +304,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: King
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 104123536, guid: 0975e091519818c4ab3db4fd51a0b93a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0975e091519818c4ab3db4fd51a0b93a, type: 3}
 --- !u!1001 &4826252946366697851
 PrefabInstance:
