@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class player_movement : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class player_movement : MonoBehaviour
     public float frameNeedForMovement = 10;
     int frameCounter = 0;
     public Vector2 move;
+ 
+
 
     // Start is called before the first frame update
     void Start()
@@ -117,6 +120,13 @@ public class player_movement : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, lockedTarget, (float)smoothing * Time.deltaTime);
         }
 
+
+
     }
+    
+    
+
 }
+
+
  
