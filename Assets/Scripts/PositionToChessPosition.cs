@@ -23,7 +23,7 @@ public class PositionToChessPosition : MonoBehaviour
         double letter;
         
         letter = Position.x / 0.225 + 1;
-        number = -1* (Position.y  + 0.0925) / 0.225 + 1  ;
+        number = -1* (Position.y  + 0.0925) / 0.225 + 1;
 
 
         chessPos.Add(Convert.ToInt32(letter));
